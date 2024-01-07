@@ -1,0 +1,149 @@
+/* start css reset  */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+  }
+  *:focus {
+    outline: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+/* end css reset  */
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:767px){
+  main{
+    flex-direction: column;
+  }
+
+}
+main .result{
+    background-image: linear-gradient(hsl(252, 100%, 67%) ,hsl(241, 81%, 54%));
+    border-radius: 30px;
+    text-align: center;
+    color:white ;
+    padding: 30px 60px;
+    width: 375px;
+}
+main .result span{
+    color: hsl(0, 0%, 80%);
+}
+main .result .circle{
+  background-image: linear-gradient(hsl(241, 81%, 54%),hsl(252, 100%, 67%) );
+  border-radius: 50%;
+    margin: 50px 40px;
+    width: fit-content;
+    padding: 20px;
+}
+main .result .circle span:nth-child(1){
+    display: block;
+    font-size: 60px;
+    color: white;
+    margin: 10px 30px;
+}
+main .result  p{
+  color: hsl(0, 0%, 80%);
+  font-size: 18px;
+}
+main .summary{
+  background-color: white;
+  padding: 30px 60px;
+  box-shadow: 20px 20px 15px whitesmoke;
+  border-radius: 20px;
+}
+main .summary > span{
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 25px;
+}
+main .summary .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  border-radius: 20px;
+  padding:  15px ;
+  margin-bottom: 20px;
+}
+main .summary .row p{
+  margin: 0;
+  font-weight: bold;
+}
+main .summary .row .second span{
+  color: #888;
+}
+
+main .summary .row .second span.bold{
+ color: black;
+ font-weight: bold;
+}
+
+main .summary .row .first{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main .summary .row.one{
+  background-color: hsl(0, 100%, 95%);
+}
+main .summary .row.one p{
+  color:hsl(0, 100%, 57%) ;
+}
+main .summary .row.two{
+  background-color: hsl(39, 100%, 90%);
+}
+main .summary .row.two p{
+  color:hsl(39, 100%, 56%) ;
+}
+main .summary .row.three{
+  background-color: hsl(166, 100%, 95%);
+}
+main .summary .row.three p{
+  color: hsl(166, 100%, 35%);
+
+}
+main .summary .row.four{
+  background-color:   hsl(234, 85%, 95%);
+}
+main .summary .row.four p{
+  color:  hsl(234, 85%, 45%);
+}
+main .summary a{
+  background-color: #303b59;
+  color: white;
+  padding: 15px 90px;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 40px;
+  display: block;
+}
+main .summary a:hover{
+  background-image: linear-gradient(hsl(252, 100%, 67%) ,hsl(241, 81%, 54%));
+
+}
+
+
+
+
+
+
+
